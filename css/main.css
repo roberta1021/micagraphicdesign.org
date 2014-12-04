@@ -1,3 +1,6 @@
+@import "http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css";
+@import url('http://fonts.googleapis.com/css?family=Roboto');
+
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 
 /*
@@ -12,6 +15,7 @@
 
 html {
     color: #222;
+    font-family: 'Roboto';
     font-size: 1em;
     line-height: 1.4;
 }
@@ -45,6 +49,8 @@ hr {
     padding: 0;
 }
 
+
+
 /*
  * Remove the gap between images, videos, audio and canvas and the bottom of
  * their containers: h5bp.com/i/440
@@ -67,6 +73,11 @@ fieldset {
     margin: 0;
     padding: 0;
 }
+
+a:hover {
+	color: ##EE4E60;
+}
+
 
 /*
  * Allow only vertical resizing of textareas.
@@ -180,6 +191,10 @@ textarea {
     clear: both;
 }
 
+
+
+
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -266,3 +281,973 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+
+/* css coding */
+/* event-listing page */
+header {
+	position: fixed;
+	background: rgba(238,79,79,0.8) /* #EE4E60 */;	
+	width: 100%;
+	z-index: 10;
+}
+
+a {
+	color: 	black;
+}
+
+h2 {
+	font-size: 15px;
+	text-transform: uppercase;
+	margin-top: 10px;
+}
+
+h2.heading {
+	margin: 2px 0;
+}
+
+img {
+	width: 150px;
+	padding: 5px;
+	margin-right: 2%;
+	float: left;
+}
+
+body {
+	background: #EFE6E3;
+}
+
+
+/* event calendar*/
+p.date {
+	margin: 2px 0;
+}
+
+p.location {
+	margin: 2px 0;
+}
+
+
+/* top navigation bar */
+.brand {
+	float: left;
+	padding: .5em;
+	text-transform: uppercase;
+	font-size: 20px;
+	width: 20%;
+	font-weight: 600;
+}
+
+.navigation {
+	float: left; 
+	width: 40%;
+}
+
+.masthead {
+	top: 0;
+}
+
+.masthead ul {
+	display: inline-block;
+	list-style-type: none;
+	
+}
+
+.masthead a {
+	text-decoration: none;
+	color: black;
+}
+
+.masthead a:hover {
+	color: white;
+}
+
+
+/* main nav */
+.navigation.menus {
+	width: 371px;
+	float: left;
+}
+
+.utility.menus ul.menu {
+	overflow: hidden;
+	float: left;
+	width: 300px;
+
+}
+
+.menu,
+.menu.level-1 {
+	margin: 10px 0 5px 0;
+}
+
+.menu.level-1 {
+	width: 400px;
+}
+
+.utility.menus ul.menu {
+	width: 400px;
+}
+
+.navigation.menus a,
+.utility.menus a {
+	padding-right: 9px;
+	border-right: 1px solid black;
+}
+
+.utility.menus .menu .item:first-child a {
+	padding-left: 8px;
+}
+
+.utility.menus .menu .item:last-child a {
+	border-right: 0;
+}
+
+
+/* social menus */
+.menus.social {
+	display: table-footer-group;
+	position: absolute;
+	top: 95%%;
+	right: 10px;
+	z-index: 100;	
+}
+
+.menus.social a.link {
+	font-size: 15px;
+	color: pink;
+
+}
+
+
+/* secondary menus */
+/* search box */
+.utility.menus form {
+	position: absolute;
+	top: 11px;
+	right: 0;
+	display: inline-block;
+	font-size: 10px;
+	width: 200px;
+}
+
+.utility.menus input {
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.utility.menus .field {
+	width: 150px;
+	float: left;
+}
+
+.utility.menus .action {
+	width: 50px;
+	float: left;
+}
+
+.control {
+	background: #535353;
+	border: none;
+	color: white;
+}
+
+
+/* body */
+.menu {
+	padding-left: 0;
+	margin-left: 0;
+}
+
+.item {
+	font-size: 14px;
+	text-transform: lowercase;
+	font-family: 'Roboto' 100, sans-serif;
+	display: inline;
+	padding-right: .5em;
+}
+
+
+main.page {
+	width: 65%;
+	padding: 75px 50px 100px 250px;
+	background: white;
+	margin: auto;
+	position: relative;
+
+	/*
+font-family: 'Roboto', sans-serif;
+	color: black;
+	margin: auto;
+	width: 700px;
+	background: white;
+	padding: 70px 50px 100px 300px;
+*/
+}
+
+.main a {
+	text-decoration: none;
+	color: black;
+}
+
+.main a:hover {
+	color: #EE4E60;
+}
+
+
+/* content */
+.copy {
+	font-weight: 100;
+	font-size: 12px;
+}
+
+.main .items.events.ui .event.item {
+	display: block;
+	overflow: hidden;
+	/* border-bottom: 1px solid #989898; */
+	padding: 20px 0;
+}
+
+.main .items.events.ui .event.item .attach {
+	float: left;
+	width: 163px;
+	margin-right: 20px;
+}
+
+/* ordering content(location) */
+.main .items.events.ui .event.item .content {
+	display: table;
+	overflow: hidden;
+}
+
+.main .items.events.ui .event.item .header {
+	display: table-caption;  /* Displays first */
+	margin-bottom: 5px;
+}
+
+.main .items.events.ui .event.item .copy {
+	display: table-footer-group; /* Displays last */
+	font-size: 12px;
+}
+
+.main .items.events.ui .event.item .footer {
+	display: table-header-group; /* Displays second */
+	margin: 0;
+}
+
+.main .items.events.ui .event.item .meta {
+	font-size: 12px;
+	font-weight: 300;
+}
+
+
+/* side bar */
+.sub {
+	z-index: 0;
+	background: none;
+	text-align: left;
+	float: left;
+	width: 160px;
+	overflow: hidden;
+	position: absolute;
+	top: 85px;
+	left: 0;
+	padding-left: 25px;
+
+	/*
+width: 150px;
+	overflow: hidden;
+	position: absolute;
+	top: 90px;
+	left: 90px;
+	padding:0 50px 0 25px;
+	margin-left: 5%;
+*/
+}
+
+.sub h2 {
+	font-size: 12px;
+}
+
+.sub .item {
+	display: block;
+	font-size: 9px;
+}
+
+.sub .item a {
+	text-decoration: none;
+	text-transform: lowercase;
+}
+
+.sub .item a:hover {
+	color: #EE4E60;
+}
+
+/* side bar search box */
+.required.email {
+	width: 150px;
+}
+
+div.mc-field-group {
+	font-size: 9px;
+}
+
+input#mc-embedded-subscribe.button {
+	background: #535353;
+	border: none;
+	color: white;
+	font-size: 10px;
+}
+
+a.button.archive {
+	font-family: 'Roboto' 100, sans-serif;
+	font-size: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+
+/* footer */
+.canvas footer {
+	background-color: black;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 30px;
+}
+
+.footer {
+	font-size: 9px;
+}
+
+.footer a {
+	font-size: 9px;
+	text-decoration: none;
+}
+
+
+.footer .menus.departments .menu .item a{
+	color: white;
+}
+
+.footer .menus.departments {
+	width: 150px;
+}
+
+.footer ul.menu {
+	position: absolute;
+	bottom: 7px;
+	margin: 0;
+	padding-left: 15px;
+}
+
+.footer .legal {
+	position: absolute;
+	bottom: 10px;
+	right: 15px;
+	width: 200px;
+	color: white;
+	margin: 0;
+	text-align: right;
+}
+
+.footer .tags {
+	padding-bottom: 5px;
+}
+
+/* visibilly hidden */
+/* calendar */
+.segment.calendar {
+	visibility: hidden;
+	position: absolute;
+	bottom: 0;
+}
+
+/* rss */
+a.rss {
+	visibility: hidden;
+}
+
+
+
+
+
+
+/*profile page*/
+
+header.header {
+	z-index: 0;
+	background: none;
+	text-align: left;
+	float: left;
+	width: 150px;
+	overflow: hidden;
+	position: absolute;
+	top: 80px;
+	left: 0;
+	padding-left: 25px;
+}
+
+h1.p-name.heading {
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+nav.categories {
+	height: 15px;
+}
+
+nav.categories a {
+	text-decoration: none;
+	font-size: 9px;
+}
+
+nav.tags a {
+	font-size: 9px;
+	text-decoration: none;
+}
+
+p {
+	margin: 0;
+}
+
+.body p {
+	font-size: 11px;
+}
+
+.content ul.link.list {
+	margin: 10px 0;
+}
+
+.content ul.link.list a {
+	font-size: 9px;
+	text-decoration: none;
+}
+
+p.heading {
+	font-weight: 400;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+p.date {
+	text-transform: lowercase;
+	font-size: 15px;
+}
+
+.byline,
+.story a{
+	font-size: 12px;
+}
+
+.byline a.link {
+	text-decoration: none;
+}
+
+figcaption.caption {
+	font-size: 25px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.story.h-entry .attach,
+.content .profiles .attach {
+	max-width: 700px;
+	display: inline-block;
+}
+
+.story.h-entry .attach {
+	margin-left: 0;
+}
+
+.story.h-entry .attach img {
+	width: 500px;
+	border: none;
+	padding: 0;
+}
+
+.profiles {
+	position: absolute;
+	left: 800px;
+	top: 75px;
+	
+}
+
+.profiles .content {
+	width: 180px;
+}
+
+.content .profiles figure.attach {
+	margin-bottom: 0;
+}
+
+.content .profiles .attach img{
+	display: inline-block;
+	width: 100px;
+	float: left;
+	border: none;
+	padding: 0;
+}
+
+.card.profile ul.link.list {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 15px;
+	height: 15px;
+}
+
+.body p strong {
+	text-transform: uppercase;
+}
+
+.canvas .shim aside.gallery.segment {
+	float: left;
+	max-width: 100%;
+	overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding-right: 0;
+    margin-bottom: 20px;
+}
+
+.canvas .shim .gallery.segment img{
+	margin: 0;
+	padding-left: 0;
+	padding-right: 5px;
+	border: none;
+	width: 180px;
+	display: inline-block;
+    vertical-align: middle;	
+    float: left;
+}
+
+ul.slides {
+	width: 100%;
+}
+
+li.slide {
+	display: inline-block;
+}
+
+
+
+/*
+/* replacing the sns icons */
+/* social media */
+[href*="twitter"] {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+	position: relative;
+}
+
+[href*="twitter"]:before {
+	content: '';
+	display: block;
+	width: 0;
+	height: 150%;
+}
+
+[href*="twitter"]:after {
+	content: '\f099';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	text-align: center;
+	color: pink;
+	font-family: 'FontAwesome';
+}
+
+[href*="tumblr"] {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+	position: relative;
+}
+
+[href*="tumblr"]:before {
+	content: '';
+	display: block;
+	width: 0;
+	height: 150%;
+}
+
+[href*="tumblr"]:after {
+	content: '\f173';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	text-align: center;
+	color: pink;
+	font-family: 'FontAwesome';
+}
+
+[href*="vimeo"] {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+	position: relative;
+}
+
+[href*="vimeo"]:before {
+	content: '';
+	display: block;
+	width: 0;
+	height: 150%;
+}
+
+[href*="vimeo"]:after {
+	content: '\f194';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	text-align: center;
+	color: pink;
+	font-family: 'FontAwesome';
+}
+
+[href*="portfolio"] {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	overflow: hidden;
+	position: relative;
+}
+
+[href*="portfolio"]:before {
+	content: '';
+	display: block;
+	width: 0;
+	height: 150%;
+}
+
+[href*="portfolio"]:after {
+	content: '\f1b4';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	text-align: center;
+	color: pink;
+	font-family: 'FontAwesome';
+}
+
+[href*="flickr"] {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+	position: relative;
+}
+
+[href*="flickr"]:before {
+	content: '';
+	display: block;
+	width: 0;
+	height: 150%;
+}
+
+[href*="flickr"]:after {
+	content: '\f16e';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	text-align: center;
+	color: pink;
+	font-family: 'FontAwesome';
+}
+
+
+
+/* social icon replacement */
+/* for profile page */
+/*
+[class*="icon twitter"] {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+	position: relative;
+}
+
+[class*="icon twitter"]:before {
+	content: '';
+	display: block;
+	width: 0;
+	height: 150%;
+}
+
+[class*="icon twitter"]:after {
+	content: '\f099';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	text-align: center;
+	color: pink;
+	font-family: 'FontAwesome';
+}
+*/
+
+/* home f015 */
+
+.main .lede {
+	padding-top: 45px;
+}
+
+.main .lede .attach img {
+	border: none;
+	width: 40%;
+	height: auto;
+}
+
+.main .lede .content h2.heading {
+	font-size: 30px;
+	font-weight: 500;
+}
+
+p.location a.map.link {
+	text-transform: lowercase;
+}
+
+.events h1.events.heading {
+	display: table;
+	width: 700px;
+	padding-top: 40px;
+	margin: 0;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+.event.item.teaser {
+	width: 180px;
+	float: left;
+}
+
+.ui.items.events {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.events .body{
+	width: 200px;
+	margin-right: 0;
+	padding-right: 0;
+}
+
+.event.item.teaser .body {
+	display: table;
+	float: left;
+	width: 180px;
+}
+
+.event.item.teaser img {
+	padding-left: 0;
+}
+
+.footer a.more.button {
+	text-transform: lowercase;
+	display: inline-block;
+}
+
+.main .gallery {
+	max-width: 800px;	
+}
+
+.gallery h1.heading {
+	display: table;
+	width: 700px;
+	padding-top: 40px;
+	margin: 0;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+.gallery .slide {
+	width: 180px;
+	padding: 20px 0;
+}
+
+.gallery ul.slides {
+	padding: 0;
+}
+
+.gallery ul.slides img {
+	padding: 0;
+}
+
+.gallery .slides .caption {
+	display: table;
+	float: left;
+}
+
+.gallery .slides .caption p.title {
+	font-size: 16px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.gallery .slides .caption h2.name {
+	font-size: 10px;
+	font-weight: 100;
+	text-transform: uppercase;
+	margin-top: 5px;
+}
+
+section.spotify {
+	z-index: 0;
+	background: none;
+	text-align: left;
+	float: left;
+	width: 160px;
+	overflow: hidden;
+	position: absolute;
+	top: 70px;
+	left: 0;
+	padding-left: 25px;
+}
+
+.spotify h1.heading {
+	font-size: 15px;
+	font-weight: 100;
+}
+
+#widgetContainer {
+	width: 150px !important;
+}
+
+.ui.items.events {
+	overflow: hidden;
+}
+
+a.permalink {
+	text-transform: uppercase;
+}
+
+
+/* dropdown */
+
+.ui.dropdown {
+	position: relative;
+	overflow: hidden;
+}
+
+.ui.dropdown .dropdown.content {
+	position: absolute;
+	top: 100%;
+	left: -9000px;
+	background:rgba(255,255,255,0.9);
+	display: block;
+	padding: 5px;
+}
+
+.ui.dropdown:hover .dropdown.content {
+	left: 0;
+}
+
+.ui.dropdown:hover {
+	overflow: visible;
+}
+
+.dropdown.content .menu.ui a.link {
+	border-right: none;
+}
+
+.dropdown.content .menu.ui a.link:hover {
+	color: #EE4E60;
+}
+
+
+
+
+/* news list */
+.page .news.lede.ui {
+	padding-top: 20px;
+}
+
+.shim .sub.content.ui {
+	height: 500px;
+}
+
+.categories.menus.segment.ui {
+	font-size: 12px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.categories.menus.segment.ui ul.menu{
+	margin-top: 20px;
+}
+
+.archives.segment {
+
+}
+
+h1.page.heading.ui {
+	text-transform: uppercase;
+}
+
+.items.posts.ui .items.list.ui {
+	display: table;
+	width: 100%;
+}
+
+.items.posts.ui .item.post.ui {
+	display: table;
+}
+
+.items.pagination.menus.ui strong.menus.title {
+	text-transform: lowercase;
+	font-size: 13px;
+}
+
+
+/* news detail */
+
+/*
+.sub.content.ui .subscribe.segment {
+	position: relative;
+	top: 300px;
+}
+
+.sub.content.ui nav.categories.menus.segment.ui {
+	position: relative;
+	top: 100px;
+}
+
+.categories.menus.segment.ui ul.menu {
+	margin: 10px 0;
+}
+
+.sub.content.ui .archives.segment {
+	position: relative;
+	top: 40px;
+}
+*/
