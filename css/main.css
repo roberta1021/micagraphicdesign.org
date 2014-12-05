@@ -1231,23 +1231,57 @@ h1.page.heading.ui {
 
 /* news detail */
 
-/*
-.sub.content.ui .subscribe.segment {
+.news.detail .sub.content.ui .subscribe.segment {
 	position: relative;
 	top: 300px;
 }
 
-.sub.content.ui nav.categories.menus.segment.ui {
+.news.detail .sub.content.ui nav.categories.menus.segment.ui {
 	position: relative;
 	top: 100px;
 }
 
-.categories.menus.segment.ui ul.menu {
-	margin: 10px 0;
+.news.detail .categories.menus.segment.ui ul.menu {
+	margin: 8px 0;
 }
 
-.sub.content.ui .archives.segment {
+.news.detail .sub.content.ui .archives.segment {
 	position: relative;
 	top: 40px;
+	margin-top: 5px;
 }
-*/
+
+
+
+/* blog */
+
+.blog.lede.ui {
+	padding-top: 20px;
+}
+
+.item.post.ui {
+	padding: 10px 0;
+}
+
+
+/* event-detail */
+
+.event.detail .sub.content.ui .subscribe.segment {
+	position: relative;
+	top: 320px;
+}
+
+.event.detail .sub.content.ui nav.categories.menus.segment.ui {
+	position: relative;
+	top: 120px;
+}
+
+.event.detail .categories.menus.segment.ui ul.menu {
+	margin: 8px 0;
+}
+
+.event.detail .sub.content.ui .archives.segment {
+	position: relative;
+	top: 60px;
+	margin-top: 5px;
+}
