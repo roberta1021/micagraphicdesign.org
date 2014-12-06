@@ -1264,24 +1264,48 @@ h1.page.heading.ui {
 }
 
 
-/* event-detail */
-
-.event.detail .sub.content.ui .subscribe.segment {
+/* blog detail */
+.news.detail .sub.content.ui .subscribe.segment {
 	position: relative;
-	top: 320px;
+	top: 300px;
 }
 
-.event.detail .sub.content.ui nav.categories.menus.segment.ui {
+.news.detail .sub.content.ui nav.categories.menus.segment.ui {
 	position: relative;
-	top: 120px;
+	top: 100px;
 }
 
-.event.detail .categories.menus.segment.ui ul.menu {
+.news.detail .categories.menus.segment.ui ul.menu {
 	margin: 8px 0;
 }
 
-.event.detail .sub.content.ui .archives.segment {
+.news.detail .sub.content.ui .archives.segment {
 	position: relative;
-	top: 60px;
+	top: 40px;
+	margin-top: 5px;
+}
+
+
+
+
+/* event-detail */
+
+.blog.detail .sub.content.ui .subscribe.segment {
+	position: relative;
+	top: 300px;
+}
+
+.blog.detail .sub.content.ui nav.categories.menus.segment.ui {
+	position: relative;
+	top: 100px;
+}
+
+.blog.detail .categories.menus.segment.ui ul.menu {
+	margin: 8px 0;
+}
+
+.blog.detail .sub.content.ui .archives.segment {
+	position: relative;
+	top: 40px;
 	margin-top: 5px;
 }
