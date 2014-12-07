@@ -1264,22 +1264,22 @@ h1.page.heading.ui {
 }
 
 
-/* blog detail */
-.news.detail .sub.content.ui .subscribe.segment {
+/* event detail */
+.event.detail .sub.content.ui .subscribe.segment {
 	position: relative;
 	top: 300px;
 }
 
-.news.detail .sub.content.ui nav.categories.menus.segment.ui {
+.event.detail .sub.content.ui nav.categories.menus.segment.ui {
 	position: relative;
 	top: 100px;
 }
 
-.news.detail .categories.menus.segment.ui ul.menu {
+.event.detail .categories.menus.segment.ui ul.menu {
 	margin: 8px 0;
 }
 
-.news.detail .sub.content.ui .archives.segment {
+.event.detail .sub.content.ui .archives.segment {
 	position: relative;
 	top: 40px;
 	margin-top: 5px;
@@ -1288,7 +1288,7 @@ h1.page.heading.ui {
 
 
 
-/* event-detail */
+/* blog-detail */
 
 .blog.detail .sub.content.ui .subscribe.segment {
 	position: relative;
