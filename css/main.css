@@ -1267,12 +1267,12 @@ h1.page.heading.ui {
 /* event detail */
 .event.detail .sub.content.ui .subscribe.segment {
 	position: relative;
-	top: 300px;
+	top: 320px;
 }
 
 .event.detail .sub.content.ui nav.categories.menus.segment.ui {
 	position: relative;
-	top: 100px;
+	top: 120px;
 }
 
 .event.detail .categories.menus.segment.ui ul.menu {
@@ -1281,7 +1281,7 @@ h1.page.heading.ui {
 
 .event.detail .sub.content.ui .archives.segment {
 	position: relative;
-	top: 40px;
+	top: 60px;
 	margin-top: 5px;
 }
 
