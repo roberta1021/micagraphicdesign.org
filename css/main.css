@@ -294,6 +294,10 @@ header {
 
 a {
 	color: 	black;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+	-o-transition: .3s;
 }
 
 h2 {
@@ -308,7 +312,7 @@ h2.heading {
 
 img {
 	width: 150px;
-	padding: 5px;
+	padding: 5px 5px 5px 0;
 	margin-right: 2%;
 	float: left;
 }
@@ -369,10 +373,9 @@ p.location {
 	float: left;
 }
 
-.utility.menus ul.menu {
-	overflow: hidden;
+.utility.menus {
 	float: left;
-	width: 300px;
+	width: 400px;
 
 }
 
@@ -385,9 +388,11 @@ p.location {
 	width: 400px;
 }
 
+/*
 .utility.menus ul.menu {
 	width: 400px;
 }
+*/
 
 .navigation.menus a,
 .utility.menus a {
@@ -395,7 +400,7 @@ p.location {
 	border-right: 1px solid black;
 }
 
-.utility.menus .menu .item:first-child a {
+.utility.menus > .menu > .item:first-child > a {
 	padding-left: 8px;
 }
 
